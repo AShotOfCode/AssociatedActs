@@ -1,25 +1,20 @@
 {
-  "name": "associatedacts",
-  "version": "1.0.0",
-  "description": "",
-  "main": "dist/module.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "AssociatedActs",
+  "version": "0.0.1",
+  "private": true,
   "devDependencies": {
-        "grunt": "^0.4.5",
-        "babelify": "^6.1.0",
-        "grunt-browserify": "^3.8.0",
-        "grunt-contrib-watch": "^0.6.1"
+    "react-scripts": "0.2.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ErkanSen14/AssociatedActs.git"
+  "dependencies": {
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ErkanSen14/AssociatedActs/issues"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
   },
-  "homepage": "https://github.com/ErkanSen14/AssociatedActs#readme"
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/config/eslint.js"
+  }
 }
