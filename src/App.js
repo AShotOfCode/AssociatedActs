@@ -24,7 +24,8 @@ class App extends Component {
                         "target": 2,
                         "value": 2
                     }
-                ]}
+                ]},
+            loaded: false
 
         }
     }
@@ -38,7 +39,7 @@ class App extends Component {
                 tempRappers.push(value.z.value.split("http://dbpedia.org/resource/")[1])
             }
         }).then(data => {
-            this.setState({rappers: tempRappers})
+            this.setState({rappers: tempRappers, loaded: true})
         })
     }
     drawD3() {
@@ -75,11 +76,16 @@ class App extends Component {
 
     }
     render() {
+      if (this.state.loaded)
         return (
             <div className="App">
               {this.drawD3()}
             </div>
         );
+      else
+        return(
+          <div></div>
+        )
     }
 }
 
